@@ -40,8 +40,8 @@ if __name__ == "__main__":
     labels = lb.fit_transform(labels)
     # partition the data into training and testing splits using 80% of
     # the data for training and the remaining 20% for testing
-    (trainX, testX, trainY, testY) = train_test_split(data,
-                                                      labels, test_size=0.20, stratify=labels, random_state=42)
+    (trainX, testX, trainY, testY) = train_test_split(data, labels, test_size=0.20, stratify=labels, random_state=42)
+    
     #INITIALIZATION
     print("[INFO] compiling model")
     opt = SGD(lr=0.01)
